@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, PropType } from 'vue'
 export interface ColumnProps {
   id: number;
   title: string;
@@ -16,18 +16,18 @@ export interface ColumnProps {
   description: string;
 }
 export default defineComponent({
-  name: "ColumnList",
+  name: 'ColumnList',
   props: {
     list: {
       type: Array as PropType<ColumnProps[]>,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {},
-  setup() {
-    return {};
-  },
-});
+  setup () {
+    return {}
+  }
+})
 </script>
 
 <style scoped lang="scss"></style>
