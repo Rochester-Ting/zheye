@@ -1,6 +1,6 @@
 <template>
   <ul v-for="item of list" :key="item.id">
-    <img src="item.avatar" alt="item.title" />
+    <img :src="item.avatar" alt="item.title" />
     <h5>{{ item.title }}</h5>
     <p>{{ item.description }}</p>
     <a href="#">进入专栏</a>
